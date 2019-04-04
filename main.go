@@ -1,8 +1,6 @@
-package main
+package golangexamples
 
 import (
-	"fmt"
-
 	"github.com/ehteshamz/greetings"
 )
 
@@ -22,12 +20,4 @@ func Encrypt(sliceToEncrypt []byte, ceaserCount int) {
 }
 func EZGreetings(name string) string {
 	return greetings.PrintGreetings(name)
-}
-func main() {
-	a := []byte{'a', 'b', 'c', 'd'}
-	fmt.Println("Concatenated Slice: " + ConcatSlice(a))
-	Encrypt(a, 3)
-	fmt.Println("Encrypted Slice: " + string(a))
-	fmt.Println("Instructor's Greeting Function called: " + EZGreetings("amir"))
-
 }
